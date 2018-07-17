@@ -18,7 +18,7 @@ const mapDispatchToProps = (dispatch) => ({
   onIncrement: () => dispatch(actions.increment()),
   onDecrement: () => dispatch(actions.decrement()),
   onSetColor: () => {
-    const color = getRandomColor;
+    const color = getRandomColor();
     dispatch(actions.set_color(color));
   }
 });
