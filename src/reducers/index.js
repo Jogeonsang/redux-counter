@@ -35,6 +35,7 @@ function counter(state = initialState, action) {
 
         // action.index 번째 카운터의 number 에 1 을 더합니다.
         case types.INCREMENT:
+          console.log(action.index);
             return {
                 counters: [
                     ...counters.slice(0, action.index),

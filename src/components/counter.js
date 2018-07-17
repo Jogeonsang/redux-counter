@@ -6,7 +6,7 @@ const Counter = ({ index, number, color, onIncrement, onDecrement, onSetColor}) 
   return (
     <div
       className = "Counter"
-      onClick = {onIncrement}
+      onClick ={() => onIncrement(index)}
       onContextMenu={
         (e) => {
           e.preventDefault();
